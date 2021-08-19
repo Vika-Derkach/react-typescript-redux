@@ -12,17 +12,17 @@ interface FetchUsersAction {
   type: UserActionTypes.FETCH_USERS;
 }
 interface FetchUsersSuccessAction {
-  type: UserActionTypes.FETCH_USERS;
+  type: UserActionTypes.FETCH_USERS_SUCCESS;
   payload: any[];
 }
 interface FetchUsersErrorAction {
-  type: UserActionTypes.FETCH_USERS;
+  type: UserActionTypes.FETCH_USERS_ERROR;
   payload: string;
 }
-interface UserAction {
-  type: string;
-  payload?: any;
-}
+// interface UserAction {
+//   type: string;
+//   payload?: any;
+// }
 export type UserAction =
   | FetchUsersAction
   | FetchUsersSuccessAction
